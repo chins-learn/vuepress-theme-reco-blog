@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: chins-learn/vuepress-theme-reco-blog@master
+      uses: chins-learn/vuepress-theme-reco-blog@${{ github.event.repository.default_branch }}
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: chins-learn/chins-learn.github.io
