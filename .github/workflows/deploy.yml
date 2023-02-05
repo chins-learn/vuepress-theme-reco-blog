@@ -8,11 +8,11 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: chins-learn/vuepress-theme-reco-blog@main
+      uses: chins-learn/vuepress-theme-reco-blog@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: chins-learn/chins-learn.github.io
-        TARGET_BRANCH: main
+        TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: public/
         
