@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: Build and Deploy
-      uses: chins-learn/vuepress-theme-reco-blog@master
+      uses: chins-learn/vuepress-theme-reco-blog@main
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: chins-learn/chins-learn.github.io
-        TARGET_BRANCH: master
+        TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: public/
         
