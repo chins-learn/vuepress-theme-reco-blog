@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: chins-learn/chins-learn.github.io
         TARGET_BRANCH: master
-        BUILD_DIR: blog/.vuepress/dist/
+        BUILD_DIR: public/
         
